@@ -1,0 +1,22 @@
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    max-width: 100%;
+}
+
+
+path:hover {
+    fill: darkmagenta;
+}
+
+.getmapped {
+    justify-content: center;
+    margin-right: 10%;
+    background-color: antiquewhite;
+    padding: 0.5%;
+}
