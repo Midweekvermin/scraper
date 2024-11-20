@@ -2,13 +2,16 @@ package com.sh.webscraper;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private TextField sUrl;
+
+    @FXML
+    protected void onButtonClick() {
+    String url = sUrl.getText();
+
     }
 }

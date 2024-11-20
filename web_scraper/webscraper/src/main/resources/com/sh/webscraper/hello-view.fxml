@@ -4,15 +4,15 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sh.webscraper.HelloController">
    <children>
       <ImageView fitHeight="333.0" fitWidth="534.0" pickOnBounds="true">
          <image>
             <Image url="@dragon_background.png" />
          </image>
       </ImageView>
-      <TextField layoutX="121.0" layoutY="142.0" prefHeight="25.0" prefWidth="265.0" />
-      <Button layoutX="215.0" layoutY="178.0" mnemonicParsing="false" text="Button" />
+      <TextField fx:id="sUrl" layoutX="121.0" layoutY="142.0" prefHeight="25.0" prefWidth="265.0" />
+      <Button layoutX="228.0" layoutY="183.0" mnemonicParsing="false" onMouseClicked="#onButtonClick" text="Scrape" />
       <Label layoutX="121.0" layoutY="117.0" prefHeight="25.0" prefWidth="265.0" text="Input Url to Scrape from:" textFill="#030303" />
    </children>
 </AnchorPane>
