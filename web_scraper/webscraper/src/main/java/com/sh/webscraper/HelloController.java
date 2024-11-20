@@ -11,7 +11,17 @@ public class HelloController {
 
     @FXML
     protected void onButtonClick() {
-    String url = sUrl.getText();
-
+        try {
+            String url = sUrl.getText();
+            ProcessBuilder processBuilder = new ProcessBuilder("python","Scraper.py" , url);
+            processBuilder.redirectErrorStream(true);
+            Process process = processBuilder.start();
+            System.out.println("Scraper started");
+            int exitCode = process.waitFor();
+            System.out.println(exitCode);
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }
