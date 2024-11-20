@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from ebooklib import epub
 import os
+import sys
 
 
 import time
@@ -41,4 +42,7 @@ def scrape(url):
 
 
     driver.quit()
-scrape()
+
+url = sys.argv[1]
+scrape(url)
+

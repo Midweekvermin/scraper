@@ -12,8 +12,9 @@ public class HelloController {
     @FXML
     protected void onButtonClick() {
         try {
-            String url = sUrl.getText();
-            ProcessBuilder processBuilder = new ProcessBuilder("python","Scraper.py" , url);
+            String url = sUrl.getText().toString();
+            System.out.println("url: " + url);
+            ProcessBuilder processBuilder = new ProcessBuilder("python","src/main/resources/com/sh/webscraper/Scraper.py" ,url);
             processBuilder.redirectErrorStream(true);
             Process process = processBuilder.start();
             System.out.println("Scraper started");
